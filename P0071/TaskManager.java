@@ -22,7 +22,6 @@ public class TaskManager {
         String taskTypeId = Validation.checkInputTaskId();
         System.out.println("Enter Date(dd-MM-yyyy): ");
         String date = Validation.checkInputDate();
-        System.out.print("Enter From");
         System.out.print("Enter From: ");
         String planFrom = Validation.checkInputPlan();
 
@@ -92,4 +91,5 @@ public class TaskManager {
     }
     }
 }
+
 
