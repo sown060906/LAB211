@@ -85,22 +85,5 @@ public class Validation {
                 System.err.println("Re-input");
         }
     }
-    public static double checkInputPlanTo(double planFrom) {
-    while (true) {
-        try {
-            System.out.print("Enter To: ");
-            double value = Double.parseDouble(in.nextLine().trim());
-            if (value <= planFrom) {
-                System.err.println("Plan To must be greater than Plan From.");
-            } else if (value < 8.0 || value > 17.5) {
-                System.err.println("Time must be in range 8.0 - 17.5");
-            } else {
-                return value;
-            }
-        } catch (NumberFormatException e) {
-            System.err.println("Please input a number like 8.0, 8.5, ... 17.5");
-        }
-    }
 }
 
-}
