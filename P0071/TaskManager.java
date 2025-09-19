@@ -82,8 +82,8 @@ public class TaskManager {
         double time = Double.parseDouble(task.getPlanTo()) - Double.parseDouble(task.getPlanFrom()); 
         System.out.printf("%-5d%-20s%-15s%-15s%-10.1f%-15s%-15s\n",
                 task.getId(),
-                task.getRequirementName(),
                 task.getTaskTypeId(),
+                task.getRequirementName(),
                 task.getDate(),
                 time,                      
                 task.getAssignee(),
@@ -91,5 +91,6 @@ public class TaskManager {
     }
     }
 }
+
 
 
