@@ -11,6 +11,18 @@ package J1.S.P0073;
 public class Main {
     public static void main(String[] args) {
         ExpenseManager manager = new ExpenseManager();
-        manager.displayMenu();
+        
+        
+        manager.addExpenseDirect("11-Apr-2009", 100, "Tuition fee");
+        manager.addExpenseDirect("20-Apr-2009", 250, "Rent house");
+        manager.addExpenseDirect("30-Apr-2009", 200, "Food");
+        
+     
+        manager.displayAll();
+        System.out.println();
+        
+        
+        manager.display();
     }
 }
+
