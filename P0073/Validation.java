@@ -16,16 +16,17 @@ import java.util.Scanner;
 public class Validation {
     private static final Scanner in = new Scanner(System.in);
 
-    public static int checkIntLimit(int min, int max) {
-        while (true) {
+    public static int checkInt(int max, int min){   
+        while (true){
+            String input = checkInput();
             try {
-                int choice = Integer.parseInt(in.nextLine());
-                if (choice < min || choice > max) {
+                int result = Integer.parseInt(input);
+                if (result < min || result > max){
                     throw new NumberFormatException();
                 }
-                return choice;
-            } catch (NumberFormatException ex) {
-                System.err.println("Re-input");
+                return result;
+            } catch (NumberFormatException e){
+                System.out.println("Invalid number");
             }
         }
     }
@@ -39,17 +40,6 @@ public class Validation {
             System.err.println("Input can't be empty");
         }
     }
-
-    public static int checkInputInt() {
-        while (true) {
-            try {
-                return Integer.parseInt(in.nextLine());
-            } catch (NumberFormatException ex) {
-                System.err.println("Re-input");
-            }
-        }
-    }
-
     public static double checkInputDouble() {
         while (true) {
             try {
@@ -81,4 +71,5 @@ public class Validation {
         }
     }
 }
+
 
