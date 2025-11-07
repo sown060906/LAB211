@@ -33,16 +33,7 @@ public class StudentManagement {
         list.add(s);
         return true;
     }
-    public boolean delete(ArrayList<Student> list, Student s) {
-        return list.remove(s);
-    }
-
-    public boolean update(Student s, String name, int semester, String course) {
-        s.setStudentName(name);
-        s.setSemester(semester);
-        s.setCourseName(course);
-        return true;
-    }
+    
     public Student getStudentById(ArrayList<Student> list, String id) {
         for (Student s : list) {
             if (s.getId().equalsIgnoreCase(id)) {
@@ -65,5 +56,6 @@ public class StudentManagement {
 }
 
     
+
 
 
