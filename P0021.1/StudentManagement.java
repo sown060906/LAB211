@@ -12,14 +12,6 @@ import java.util.HashMap;
 import java.util.*;
 
 public class StudentManagement {
-    public Student findById(ArrayList<Student> list, String id) {
-        for (Student stu : list) {
-            if (stu.getId().equalsIgnoreCase(id)) {
-                return stu;
-            }
-        }
-        return null;
-    }
     public ArrayList<Student> findByName(ArrayList<Student> list, String name) {
     ArrayList<Student> result = new ArrayList<>();
     for (Student stu : list) {
@@ -73,4 +65,5 @@ public class StudentManagement {
 }
 
     
+
 
